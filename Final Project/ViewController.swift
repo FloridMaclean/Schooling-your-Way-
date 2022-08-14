@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseFirestore
 
 class ViewController: UIViewController {
     
@@ -20,6 +21,8 @@ class ViewController: UIViewController {
     private var parentView = "goToParentViewController"
     private let profView = "goToProfessorViewController"
 
+    let db = Firestore.firestore()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         emailMissingLabel.isHidden = true
@@ -52,6 +55,22 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onLoginButtonTapped(_ sender: UIButton) {
+        let message = "What's up?"
+        
+        db.collection("cities").document("LA").setData([
+            "name": "Los Angeles",
+            "state": "CA",
+            "country": "USA",
+            "message": message
+        ]) { err in
+            if let err = err {
+                print("Error writing document: \(err)")
+            } else {
+                print("Document successfully written!")
+            }
+        }
+        
+        
         let email = emailText.text  ?? ""
         var password = passwordText.text ?? ""
     
