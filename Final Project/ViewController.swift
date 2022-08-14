@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class ViewController: UIViewController {
     
@@ -20,11 +21,32 @@ class ViewController: UIViewController {
     }
 
     @IBAction func onLoginButtonTapped(_ sender: UIButton) {
-        navigateToParentView()
+        let email = emailText.text  ?? ""
+        var password = passwordText.text ?? ""
+    
+    Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
+        guard self != nil else {
+            return
+        }
+        if error != nil {
+            let message = "Try Again! Wrong id or password."
+        let alert = UIAlertController(title: "Authentication", message: message, preferredStyle: .alert)
+
+            let okButton = UIAlertAction(title: "OK", style: .default){ _ in
+                
+            }
+            alert.addAction(okButton)
+            self?.show(alert, sender: nil)
+        password = ""
+        }
+        if email == "\("")@student.ca" {
+            navigateToParentView()
+        }
+        
     }
     
     func navigateToParentView() {
         performSegue(withIdentifier: parentView, sender: self)
     }
 }
-
+}

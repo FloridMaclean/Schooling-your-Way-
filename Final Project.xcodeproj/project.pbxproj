@@ -14,6 +14,8 @@
 		F23C6A6E28A8E904001614EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F23C6A6D28A8E904001614EB /* Assets.xcassets */; };
 		F23C6A7128A8E904001614EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F23C6A6F28A8E904001614EB /* LaunchScreen.storyboard */; };
 		F23C6A7928A8F357001614EB /* parentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23C6A7828A8F357001614EB /* parentViewController.swift */; };
+		F23C6A7C28A8FDAA001614EB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F23C6A7B28A8FDAA001614EB /* FirebaseAuth */; };
+		F23C6A7E28A8FDD1001614EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F23C6A7D28A8FDD1001614EB /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,7 @@
 		F23C6A7028A8E904001614EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F23C6A7228A8E904001614EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F23C6A7828A8F357001614EB /* parentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parentViewController.swift; sourceTree = "<group>"; };
+		F23C6A7D28A8FDD1001614EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F23C6A7C28A8FDAA001614EB /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +70,7 @@
 				F23C6A6D28A8E904001614EB /* Assets.xcassets */,
 				F23C6A6F28A8E904001614EB /* LaunchScreen.storyboard */,
 				F23C6A7228A8E904001614EB /* Info.plist */,
+				F23C6A7D28A8FDD1001614EB /* GoogleService-Info.plist */,
 			);
 			path = "Final Project";
 			sourceTree = "<group>";
@@ -86,6 +91,9 @@
 			dependencies = (
 			);
 			name = "Final Project";
+			packageProductDependencies = (
+				F23C6A7B28A8FDAA001614EB /* FirebaseAuth */,
+			);
 			productName = "Final Project";
 			productReference = F23C6A6128A8E902001614EB /* Final Project.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +122,9 @@
 				Base,
 			);
 			mainGroup = F23C6A5828A8E902001614EB;
+			packageReferences = (
+				F23C6A7A28A8FDAA001614EB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = F23C6A6228A8E902001614EB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F23C6A7128A8E904001614EB /* LaunchScreen.storyboard in Resources */,
+				F23C6A7E28A8FDD1001614EB /* GoogleService-Info.plist in Resources */,
 				F23C6A6E28A8E904001614EB /* Assets.xcassets in Resources */,
 				F23C6A6C28A8E902001614EB /* Main.storyboard in Resources */,
 			);
@@ -360,6 +372,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F23C6A7A28A8FDAA001614EB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F23C6A7B28A8FDAA001614EB /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F23C6A7A28A8FDAA001614EB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F23C6A5928A8E902001614EB /* Project object */;
 }

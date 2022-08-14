@@ -11,7 +11,7 @@ class parentViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        dismiss(animated: true)
         // Do any additional setup after loading the view.
     }
     
