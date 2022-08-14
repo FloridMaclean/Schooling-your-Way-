@@ -16,6 +16,7 @@
 		F23C6A7928A8F357001614EB /* parentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23C6A7828A8F357001614EB /* parentViewController.swift */; };
 		F23C6A7C28A8FDAA001614EB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F23C6A7B28A8FDAA001614EB /* FirebaseAuth */; };
 		F23C6A7E28A8FDD1001614EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F23C6A7D28A8FDD1001614EB /* GoogleService-Info.plist */; };
+		F23C6A8028A9088D001614EB /* professorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23C6A7F28A9088D001614EB /* professorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		F23C6A7228A8E904001614EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F23C6A7828A8F357001614EB /* parentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parentViewController.swift; sourceTree = "<group>"; };
 		F23C6A7D28A8FDD1001614EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F23C6A7F28A9088D001614EB /* professorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = professorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				F23C6A6628A8E902001614EB /* SceneDelegate.swift */,
 				F23C6A6828A8E902001614EB /* ViewController.swift */,
 				F23C6A7828A8F357001614EB /* parentViewController.swift */,
+				F23C6A7F28A9088D001614EB /* professorViewController.swift */,
 				F23C6A6A28A8E902001614EB /* Main.storyboard */,
 				F23C6A6D28A8E904001614EB /* Assets.xcassets */,
 				F23C6A6F28A8E904001614EB /* LaunchScreen.storyboard */,
@@ -156,6 +159,7 @@
 				F23C6A6928A8E902001614EB /* ViewController.swift in Sources */,
 				F23C6A6528A8E902001614EB /* AppDelegate.swift in Sources */,
 				F23C6A7928A8F357001614EB /* parentViewController.swift in Sources */,
+				F23C6A8028A9088D001614EB /* professorViewController.swift in Sources */,
 				F23C6A6728A8E902001614EB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
