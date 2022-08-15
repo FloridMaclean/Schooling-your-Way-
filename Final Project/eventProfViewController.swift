@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAnalytics
 import FirebaseFirestore
 
 class eventProfViewController: UIViewController {
@@ -20,6 +21,7 @@ class eventProfViewController: UIViewController {
         loadData()
     }
     @IBAction func backButtonTapped(_ sender: UIButton) {
+        Analytics.logEvent("back_from_addEventView", parameters: nil)
         dismiss(animated: true)
     }
     
@@ -39,6 +41,7 @@ class eventProfViewController: UIViewController {
     }
     
     @IBAction func onAddEventButtonTapped(_ sender: UIButton) {
+        Analytics.logEvent("add_event_button_tapped", parameters: nil)
         
         let alertController = UIAlertController(title: "Add Grades", message: "Enter Grades Data", preferredStyle: .alert)
         

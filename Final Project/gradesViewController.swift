@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAnalytics
 import FirebaseFirestore
 
 class gradesViewController: UIViewController {
@@ -46,6 +47,7 @@ class gradesViewController: UIViewController {
     
     
     @IBAction func onBackButtonTapped(_ sender: UIButton) {
+        Analytics.logEvent("back_from_gradesView", parameters: nil)
         dismiss(animated: true)
     }
 }

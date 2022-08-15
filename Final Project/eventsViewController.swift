@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAnalytics
 import FirebaseFirestore
 
 class eventsViewController: UIViewController {
@@ -23,6 +24,7 @@ class eventsViewController: UIViewController {
     }
     
     @IBAction func onBackButtonTapped(_ sender: UIButton) {
+        Analytics.logEvent("back_from_eventsView", parameters: nil)
         dismiss(animated: true)
     }
     

@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseAnalytics
 import FirebaseFirestore
 
 class parentViewController: UIViewController {
@@ -57,20 +58,26 @@ class parentViewController: UIViewController {
     }
  
     @IBAction func onGradesButtonTapped(_ sender: UIButton) {
+        Analytics.logEvent("navigate_to_gradesView", parameters: nil)
         performSegue(withIdentifier: goToGrades, sender: self)
     }
     
     @IBAction func onEventsButtonTapped(_ sender: UIButton) {
+        Analytics.logEvent("navigate_to_eventView", parameters: nil)
         performSegue(withIdentifier: goToEvents, sender: self)
     }
     
     @IBAction func onLogoutButtonTapped(_ sender: UIButton) {
+        Analytics.logEvent("parent/student_logout", parameters: nil)
         let firebaseAuth = Auth.auth()
         
         do{
             try firebaseAuth.signOut()
             dismiss(animated: true)
         } catch let signOutError as NSError {
+            Analytics.logEvent("parent/student_logout_error", parameters: [
+                "errorMessage": signOutError
+            ])
             print("Error signing out \(signOutError)")
         }
     }

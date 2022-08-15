@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAnalytics
 import FirebaseFirestore
 
 class gradeAddProfessorViewController: UIViewController {
@@ -37,10 +38,12 @@ class gradeAddProfessorViewController: UIViewController {
     }
     
     @IBAction func backButtonTapped(_ sender: UIButton) {
+        Analytics.logEvent("back_from_addProfessorView", parameters: nil)
         dismiss(animated: true)
     }
     
     @IBAction func onAddGradesTapped(_ sender: UIButton) {
+        Analytics.logEvent("add_grades_button_tapped", parameters: nil)
         let alertController = UIAlertController(title: "Add Grades", message: "Enter Grades Data", preferredStyle: .alert)
         
         alertController.addTextField { textField in

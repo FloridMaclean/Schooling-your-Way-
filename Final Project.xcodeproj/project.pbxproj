@@ -20,6 +20,7 @@
 		F23C6A7C28A8FDAA001614EB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F23C6A7B28A8FDAA001614EB /* FirebaseAuth */; };
 		F23C6A7E28A8FDD1001614EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F23C6A7D28A8FDD1001614EB /* GoogleService-Info.plist */; };
 		F23C6A8028A9088D001614EB /* professorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23C6A7F28A9088D001614EB /* professorViewController.swift */; };
+		F2429EF028AA933C00145FE0 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F2429EEF28AA933C00145FE0 /* FirebaseAnalytics */; };
 		F269725128A9EAF300B32D2A /* gradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F269725028A9EAF300B32D2A /* gradesViewController.swift */; };
 		F269725328A9EB0000B32D2A /* eventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F269725228A9EB0000B32D2A /* eventsViewController.swift */; };
 		F28B914828A99EA30039B165 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F28B914728A99EA30039B165 /* FirebaseFirestore */; };
@@ -51,6 +52,7 @@
 			files = (
 				F23C6A7C28A8FDAA001614EB /* FirebaseAuth in Frameworks */,
 				F28B914828A99EA30039B165 /* FirebaseFirestore in Frameworks */,
+				F2429EF028AA933C00145FE0 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,12 +83,12 @@
 				F23C6A6628A8E902001614EB /* SceneDelegate.swift */,
 				F23C6A6828A8E902001614EB /* ViewController.swift */,
 				F23C6A7828A8F357001614EB /* parentViewController.swift */,
+				F269725028A9EAF300B32D2A /* gradesViewController.swift */,
+				F269725228A9EB0000B32D2A /* eventsViewController.swift */,
 				F23C6A7F28A9088D001614EB /* professorViewController.swift */,
 				3962B21428A9EF7C00EF0A01 /* addGradesViewController.swift */,
 				3962B21628A9FAFE00EF0A01 /* gradeAddProfessorViewController.swift */,
 				3962B21A28AA399100EF0A01 /* eventProfViewController.swift */,
-				F269725228A9EB0000B32D2A /* eventsViewController.swift */,
-				F269725028A9EAF300B32D2A /* gradesViewController.swift */,
 				F23C6A6A28A8E902001614EB /* Main.storyboard */,
 				F23C6A6D28A8E904001614EB /* Assets.xcassets */,
 				F23C6A6F28A8E904001614EB /* LaunchScreen.storyboard */,
@@ -122,6 +124,7 @@
 			packageProductDependencies = (
 				F23C6A7B28A8FDAA001614EB /* FirebaseAuth */,
 				F28B914728A99EA30039B165 /* FirebaseFirestore */,
+				F2429EEF28AA933C00145FE0 /* FirebaseAnalytics */,
 			);
 			productName = "Final Project";
 			productReference = F23C6A6128A8E902001614EB /* Final Project.app */;
@@ -430,6 +433,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F23C6A7A28A8FDAA001614EB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
+		};
+		F2429EEF28AA933C00145FE0 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F23C6A7A28A8FDAA001614EB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
 		};
 		F28B914728A99EA30039B165 /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;

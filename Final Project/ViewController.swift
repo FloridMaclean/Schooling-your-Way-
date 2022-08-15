@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseAnalytics
 import FirebaseFirestore
 
 class ViewController: UIViewController {
@@ -27,6 +28,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        Analytics.logEvent("login_page", parameters: nil)
         emailMissingLabel.isHidden = true
         passwordMissingLabel.isHidden = true
         loginButton.isEnabled = false
@@ -64,6 +66,9 @@ class ViewController: UIViewController {
             return
         }
         if error != nil {
+            Analytics.logEvent("login_success", parameters: [
+                "message": error ?? "Login Error"
+            ])
             let message = "Try Again! Wrong id or password."
         let alert = UIAlertController(title: "Authentication", message: message, preferredStyle: .alert)
 
@@ -73,7 +78,7 @@ class ViewController: UIViewController {
             self?.show(alert, sender: nil)
         password = ""
         }
-        
+        Analytics.logEvent("login_success", parameters: nil)
         if email.contains("@student.ca") {
             self!.navigateToParentView()
         } else {
@@ -86,13 +91,14 @@ class ViewController: UIViewController {
     }
     
     func navigateToParentView() {
+        Analytics.logEvent("navigate_to_parentView", parameters: nil)
         performSegue(withIdentifier: parentView, sender: self)
     }
         
     func navigateToProfView() {
+        Analytics.logEvent("navigate_to_profView", parameters: nil)
         performSegue(withIdentifier: profView, sender: self)
     }
-    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == parentView {

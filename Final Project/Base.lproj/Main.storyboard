@@ -44,7 +44,7 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="218" id="4kD-pJ-ckX"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Add student"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Add Student"/>
                                 <connections>
                                     <action selector="onAddStudentButtontapped:" destination="fFH-jq-RMN" eventType="touchUpInside" id="4gS-Aa-qyM"/>
                                 </connections>
@@ -273,7 +273,7 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="189" id="fej-09-p6W"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Add Grades"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Add Students"/>
                                 <connections>
                                     <action selector="onAddGradesButtonTapped:" destination="yxO-0i-bi2" eventType="touchUpInside" id="NzP-Pd-Gun"/>
                                 </connections>
