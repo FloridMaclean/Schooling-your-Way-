@@ -55,20 +55,20 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onLoginButtonTapped(_ sender: UIButton) {
-//        let message = "What's up?"
-//        
-//        db.collection("cities").document("LA").setData([
-//            "name": "Los Angeles",
-//            "state": "CA",
-//            "country": "USA",
-//            "message": message
-//        ]) { err in
-//            if let err = err {
-//                print("Error writing document: \(err)")
-//            } else {
-//                print("Document successfully written!")
-//            }
-//        }
+        let message = "What's up?"
+        
+        db.collection("cities").document("LA").setData([
+            "name": "Los Angeles",
+            "state": "CA",
+            "country": "USA",
+            "message": message
+        ]) { err in
+            if let err = err {
+                print("Error writing document: \(err)")
+            } else {
+                print("Document successfully written!")
+            }
+        }
         
         
         let email = emailText.text  ?? ""

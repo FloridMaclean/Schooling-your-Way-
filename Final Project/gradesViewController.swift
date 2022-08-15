@@ -11,10 +11,6 @@ class gradesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
-    @IBAction func onBackButtonTapped(_ sender: UIButton) {
-        dismiss(animated: true)
-    }
 }
