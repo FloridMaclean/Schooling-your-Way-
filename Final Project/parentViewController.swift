@@ -9,8 +9,10 @@ import UIKit
 
 class parentViewController: UIViewController {
     
-    @IBOutlet weak var gradesButton: UIButton!
     @IBOutlet weak var studentNameLabel: UILabel!
+    
+    private var goToGrades = "goToGradesViewController"
+    private var goToEvents = "goToEventsViewController"
 
     var userName: String?
 
@@ -19,4 +21,14 @@ class parentViewController: UIViewController {
         studentNameLabel.text = userName
     }
  
+    @IBAction func onGradesButtonTapped(_ sender: UIButton) {
+        performSegue(withIdentifier: goToGrades, sender: self)
+    }
+    
+    @IBAction func onEventsButtonTapped(_ sender: UIButton) {
+        performSegue(withIdentifier: goToEvents, sender: self)
+    }
+    
+    @IBAction func onLogoutButtonTapped(_ sender: UIButton) {
+    }
 }
