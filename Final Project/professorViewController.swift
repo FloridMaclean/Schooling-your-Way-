@@ -11,7 +11,7 @@ import FirebaseAuth
 class professorViewController: UIViewController {
     
     private var goToAddGrades = "goToAddGradesViewController"
-
+    private var goToAddEvent = "goToEventProfView"
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +21,9 @@ class professorViewController: UIViewController {
         performSegue(withIdentifier: goToAddGrades, sender: self)
     }
     
+    @IBAction func onAddEventButtonTapped(_ sender: UIButton) {
+        performSegue(withIdentifier: goToAddEvent, sender: self)
+    }
     @IBAction func onLogoutButtonTapped(_ sender: UIButton) {
         let firebaseAuth = Auth.auth()
         do{

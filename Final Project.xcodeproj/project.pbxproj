@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3962B21528A9EF7C00EF0A01 /* addGradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3962B21428A9EF7C00EF0A01 /* addGradesViewController.swift */; };
 		3962B21728A9FAFE00EF0A01 /* gradeAddProfessorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3962B21628A9FAFE00EF0A01 /* gradeAddProfessorViewController.swift */; };
+		3962B21B28AA399100EF0A01 /* eventProfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3962B21A28AA399100EF0A01 /* eventProfViewController.swift */; };
 		F23C6A6528A8E902001614EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23C6A6428A8E902001614EB /* AppDelegate.swift */; };
 		F23C6A6728A8E902001614EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23C6A6628A8E902001614EB /* SceneDelegate.swift */; };
 		F23C6A6928A8E902001614EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23C6A6828A8E902001614EB /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		3962B21428A9EF7C00EF0A01 /* addGradesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addGradesViewController.swift; sourceTree = "<group>"; };
 		3962B21628A9FAFE00EF0A01 /* gradeAddProfessorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gradeAddProfessorViewController.swift; sourceTree = "<group>"; };
+		3962B21A28AA399100EF0A01 /* eventProfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventProfViewController.swift; sourceTree = "<group>"; };
 		F23C6A6128A8E902001614EB /* Final Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Final Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F23C6A6428A8E902001614EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F23C6A6628A8E902001614EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				3962B21428A9EF7C00EF0A01 /* addGradesViewController.swift */,
 				3962B21628A9FAFE00EF0A01 /* gradeAddProfessorViewController.swift */,
 				F23C6A6A28A8E902001614EB /* Main.storyboard */,
+				3962B21A28AA399100EF0A01 /* eventProfViewController.swift */,
 				F269725228A9EB0000B32D2A /* eventsViewController.swift */,
 				F269725028A9EAF300B32D2A /* gradesViewController.swift */,
 				F23C6A6D28A8E904001614EB /* Assets.xcassets */,
@@ -183,6 +186,7 @@
 				F23C6A6928A8E902001614EB /* ViewController.swift in Sources */,
 				F23C6A6528A8E902001614EB /* AppDelegate.swift in Sources */,
 				F269725128A9EAF300B32D2A /* gradesViewController.swift in Sources */,
+				3962B21B28AA399100EF0A01 /* eventProfViewController.swift in Sources */,
 				F269725328A9EB0000B32D2A /* eventsViewController.swift in Sources */,
 				F23C6A7928A8F357001614EB /* parentViewController.swift in Sources */,
 				F23C6A8028A9088D001614EB /* professorViewController.swift in Sources */,
