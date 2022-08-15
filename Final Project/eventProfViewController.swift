@@ -2,7 +2,7 @@
 //  eventProfViewController.swift
 //  Final Project
 //
-//  Created by Sanket Patel on 2022-08-15.
+//  Created by Group#15 on 2022-08-15.
 //
 
 import UIKit
@@ -28,7 +28,6 @@ class eventProfViewController: UIViewController {
             if err != nil {
                 print("Error getting documents: (err)")
             } else {
-                
                 self.events = []
                 for document in querySnapshot!.documents {
                     let tests = document.data()
@@ -62,9 +61,7 @@ class eventProfViewController: UIViewController {
                     "eventName": name,
                     "eventDate": date,
                 ]
-                
-//                self.events.append(newTestData)
-                
+
                 self.db.collection("events").document(name!).setData(newTestData as [String : Any]) { err in
                     if let err = err {
                         print("Error writing document: \(err)")
@@ -77,7 +74,6 @@ class eventProfViewController: UIViewController {
             }
         }))
         self.present(alertController, animated: true)
-        
     }
 }
 

@@ -2,7 +2,7 @@
 //  eventsViewController.swift
 //  Final Project
 //
-//  Created by Florid Maclean on 2022-08-14.
+//  Created by Group#15 on 2022-08-14.
 //
 
 import UIKit
@@ -27,19 +27,19 @@ class eventsViewController: UIViewController {
     }
     
     private func fetchAllEvents() {
-            db.collection("events").getDocuments() { [self] (querySnapshot, err) in
-                if let err = err {
-                    print("Error getting event documents: \(err)")
-                } else {
-                    for document in querySnapshot!.documents {
-                        let eventName = "\(document.data()["eventName"] ?? "myEvent")"
-                        let eventDate = "\(document.data()["eventDate"] ?? "15/08/2022")"
-                        events.append(eventStruct(eventName: eventName, eventDate: eventDate))
-                    }
-                    eventsTableView.reloadData()
+        db.collection("events").getDocuments() { [self] (querySnapshot, err) in
+            if let err = err {
+                print("Error getting event documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    let eventName = "\(document.data()["eventName"] ?? "myEvent")"
+                    let eventDate = "\(document.data()["eventDate"] ?? "15/08/2022")"
+                    events.append(eventStruct(eventName: eventName, eventDate: eventDate))
                 }
+                eventsTableView.reloadData()
             }
         }
+    }
 }
 
 extension eventsViewController: UITableViewDataSource {

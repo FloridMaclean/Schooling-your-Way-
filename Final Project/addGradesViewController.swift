@@ -2,7 +2,7 @@
 //  addGradesViewController.swift
 //  Final Project
 //
-//  Created by Sanket Patel on 2022-08-14.
+//  Created by Group#15 on 2022-08-14.
 //
 
 import UIKit
@@ -17,7 +17,9 @@ class addGradesViewController: UIViewController {
     private var student:String = "DefaultName"
     private var allData:[[Dictionary<String, Any>]] = []
     private var data:[Dictionary<String, Any>] = []
+    
     @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -83,27 +85,14 @@ class addGradesViewController: UIViewController {
                     "Tests":[]
                 ] as [String : Any]
                 
-//                self.tests.append(newTestData as [String : Any])
-//
-//                self.db.collection("student").document(self.studentName!).updateData([
-//                    "Tests": self.tests
-//                ]){ err in
-//                    if let err = err {
-//                        print("Error updating document: \(err)")
-//                    } else {
-//                        print("Document successfully updated")
-//                        self.loadData()
-//                    }
-//                }
-                
                 self.db.collection("student").document(studentEmail!).setData(newStudentData) { err in
-                        if let err = err {
-                            print("Error writing document: \(err)")
-                        } else {
-                            print("Document successfully written!")
-                            self.loadData()
-                        }
+                    if let err = err {
+                        print("Error writing document: \(err)")
+                    } else {
+                        print("Document successfully written!")
+                        self.loadData()
                     }
+                }
             }
         }))
         self.present(alertController, animated: true)
@@ -112,7 +101,6 @@ class addGradesViewController: UIViewController {
             if segue.identifier == goToGradeAddView {
                 let destination = segue.destination as! gradeAddProfessorViewController
                 destination.studentName = self.student
-//                destination.tests = self.data
             }
         }
 }
@@ -140,5 +128,3 @@ extension addGradesViewController: UITableViewDelegate {
         performSegue(withIdentifier: goToGradeAddView, sender: self)
     }
 }
-
-

@@ -2,7 +2,7 @@
 //  gradeAddProfessorViewController.swift
 //  Final Project
 //
-//  Created by Sanket Patel on 2022-08-14.
+//  Created by Group#15 on 2022-08-14.
 //
 
 import UIKit
@@ -15,6 +15,7 @@ class gradeAddProfessorViewController: UIViewController {
     var studentName:String?
     var tests:[Dictionary<String, Any>] = []
     @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,14 +26,14 @@ class gradeAddProfessorViewController: UIViewController {
     func loadData(){
         let docRef = db.collection("student").document(self.studentName!)
 
-                docRef.getDocument { (document, error) in
-                    if let document = document, document.exists {
-                        self.tests = document.data()!["Tests"]! as AnyObject as! [Dictionary<String, Any>]
-                        self.tableView.reloadData()
-                    } else {
-                        print("Document does not exist")
-                    }
-                }
+        docRef.getDocument { (document, error) in
+            if let document = document, document.exists {
+                self.tests = document.data()!["Tests"]! as AnyObject as! [Dictionary<String, Any>]
+                self.tableView.reloadData()
+            } else {
+                print("Document does not exist")
+            }
+        }
     }
     
     @IBAction func backButtonTapped(_ sender: UIButton) {
@@ -89,8 +90,6 @@ class gradeAddProfessorViewController: UIViewController {
         self.present(alertController, animated: true)
     }
 }
-
-
 
 extension gradeAddProfessorViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
