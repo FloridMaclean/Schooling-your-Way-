@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class parentViewController: UIViewController {
     
@@ -30,5 +31,13 @@ class parentViewController: UIViewController {
     }
     
     @IBAction func onLogoutButtonTapped(_ sender: UIButton) {
+        let firebaseAuth = Auth.auth()
+        
+        do{
+            try firebaseAuth.signOut()
+            dismiss(animated: true)
+        } catch let signOutError as NSError {
+            print("Error signing out \(signOutError)")
+        }
     }
 }
