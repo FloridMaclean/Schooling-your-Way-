@@ -28,6 +28,7 @@ class parentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchStudentProfile()
+        Analytics.setUserID(studentNameLabel.text)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
