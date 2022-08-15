@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class parentViewController: UIViewController {
     
-    @IBOutlet weak var gradesButton: UIButton!
     @IBOutlet weak var studentNameLabel: UILabel!
+    private let gradesView = "goToGradesViewController"
+    private let eventsView = "goToEventsViewController"
 
     var userName: String?
 
@@ -19,4 +21,15 @@ class parentViewController: UIViewController {
         studentNameLabel.text = userName
     }
  
+    @IBAction func onGradesButtonTapped(_ sender: UIButton) {
+        performSegue(withIdentifier: gradesView, sender: self)
+    }
+    
+    @IBAction func onEventButtonTapped(_ sender: UIButton) {
+       performSegue(withIdentifier: eventsView, sender: self)
+    }
+    
+    @IBAction func onLogoutButtonTapped(_ sender: UIButton) {
+        dismiss(animated: true)
+    }
 }
