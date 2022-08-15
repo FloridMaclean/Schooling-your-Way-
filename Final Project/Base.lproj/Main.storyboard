@@ -257,6 +257,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Logout"/>
+                                <connections>
+                                    <action selector="onLogoutButtonTapped:" destination="2AS-gJ-sGq" eventType="touchUpInside" id="Mst-QE-IdG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="W6f-pS-VaA"/>
