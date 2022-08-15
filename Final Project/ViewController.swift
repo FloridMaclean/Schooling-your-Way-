@@ -20,6 +20,8 @@ class ViewController: UIViewController {
     
     private var parentView = "goToParentViewController"
     private let profView = "goToProfessorViewController"
+    
+    var studentId: String?
 
     let db = Firestore.firestore()
     
@@ -29,7 +31,6 @@ class ViewController: UIViewController {
         passwordMissingLabel.isHidden = true
         loginButton.isEnabled = false
     }
-    
     
     @IBAction func emailTextFeildMissing(_ sender: UITextField) {
         if(emailText.text == "") {
@@ -55,22 +56,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onLoginButtonTapped(_ sender: UIButton) {
-        let message = "What's up?"
-        
-        db.collection("cities").document("LA").setData([
-            "name": "Los Angeles",
-            "state": "CA",
-            "country": "USA",
-            "message": message
-        ]) { err in
-            if let err = err {
-                print("Error writing document: \(err)")
-            } else {
-                print("Document successfully written!")
-            }
-        }
-        
-        
         let email = emailText.text  ?? ""
         var password = passwordText.text ?? ""
     
@@ -88,11 +73,14 @@ class ViewController: UIViewController {
             self?.show(alert, sender: nil)
         password = ""
         }
+        
         if email.contains("@student.ca") {
             self!.navigateToParentView()
         } else {
             self!.navigateToProfView()
         }
+        self!.emailText.text = ""
+        self!.passwordText.text = ""
     }
     }
     
@@ -107,9 +95,13 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == parentView {
-//            if let userName = Auth.auth().currentUser?.email?.contains
             let destination = segue.destination as! parentViewController
-            destination.userName = "Florid"
+            destination.userName = emailText.text ?? "That's me!"
+        }
+        
+        if segue.identifier == parentView {
+            let destination = segue.destination as! parentViewController
+            destination.studentId = emailText.text ?? "stud1"
         }
     }
 }
