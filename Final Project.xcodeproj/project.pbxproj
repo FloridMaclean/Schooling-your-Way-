@@ -17,6 +17,8 @@
 		F23C6A7C28A8FDAA001614EB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F23C6A7B28A8FDAA001614EB /* FirebaseAuth */; };
 		F23C6A7E28A8FDD1001614EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F23C6A7D28A8FDD1001614EB /* GoogleService-Info.plist */; };
 		F23C6A8028A9088D001614EB /* professorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23C6A7F28A9088D001614EB /* professorViewController.swift */; };
+		F269725128A9EAF300B32D2A /* gradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F269725028A9EAF300B32D2A /* gradesViewController.swift */; };
+		F269725328A9EB0000B32D2A /* eventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F269725228A9EB0000B32D2A /* eventsViewController.swift */; };
 		F28B914828A99EA30039B165 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F28B914728A99EA30039B165 /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +34,8 @@
 		F23C6A7828A8F357001614EB /* parentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parentViewController.swift; sourceTree = "<group>"; };
 		F23C6A7D28A8FDD1001614EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F23C6A7F28A9088D001614EB /* professorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = professorViewController.swift; sourceTree = "<group>"; };
+		F269725028A9EAF300B32D2A /* gradesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gradesViewController.swift; sourceTree = "<group>"; };
+		F269725228A9EB0000B32D2A /* eventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 				F23C6A7828A8F357001614EB /* parentViewController.swift */,
 				F23C6A7F28A9088D001614EB /* professorViewController.swift */,
 				F23C6A6A28A8E902001614EB /* Main.storyboard */,
+				F269725228A9EB0000B32D2A /* eventsViewController.swift */,
+				F269725028A9EAF300B32D2A /* gradesViewController.swift */,
 				F23C6A6D28A8E904001614EB /* Assets.xcassets */,
 				F23C6A6F28A8E904001614EB /* LaunchScreen.storyboard */,
 				F23C6A7228A8E904001614EB /* Info.plist */,
@@ -169,6 +175,8 @@
 			files = (
 				F23C6A6928A8E902001614EB /* ViewController.swift in Sources */,
 				F23C6A6528A8E902001614EB /* AppDelegate.swift in Sources */,
+				F269725128A9EAF300B32D2A /* gradesViewController.swift in Sources */,
+				F269725328A9EB0000B32D2A /* eventsViewController.swift in Sources */,
 				F23C6A7928A8F357001614EB /* parentViewController.swift in Sources */,
 				F23C6A8028A9088D001614EB /* professorViewController.swift in Sources */,
 				F23C6A6728A8E902001614EB /* SceneDelegate.swift in Sources */,
@@ -316,8 +324,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Final Project/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -332,6 +342,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.fmaclean.Final-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -343,8 +354,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Final Project/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -359,6 +372,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.fmaclean.Final-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
