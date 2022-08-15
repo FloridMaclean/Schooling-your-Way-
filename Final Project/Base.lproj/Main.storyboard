@@ -169,6 +169,97 @@
             </objects>
             <point key="canvasLocation" x="-636.23188405797111" y="1660.7142857142856"/>
         </scene>
+        <!--Event Prof View Controller-->
+        <scene sceneID="cxd-ZI-K4t">
+            <objects>
+                <viewController id="oJK-K9-tye" customClass="eventProfViewController" customModule="Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="quw-M9-k0P">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iam-hL-SwA">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                <items>
+                                    <navigationItem title="Title" id="k9B-b2-Zqu">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" style="plain" id="F8K-rz-HoX">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="1EJ-19-FWm">
+                                                <rect key="frame" x="20" y="11" width="92" height="34.5"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system" title=""/>
+                                                <connections>
+                                                    <action selector="backButtonTapped:" destination="oJK-K9-tye" eventType="touchUpInside" id="dPR-gV-oLO"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGN-aO-m6h">
+                                <rect key="frame" x="106.5" y="722" width="201" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="GVT-nk-3dc"/>
+                                    <constraint firstAttribute="width" constant="201" id="m6c-FK-bCG"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Add Event"/>
+                                <connections>
+                                    <action selector="onAddEventButtonTapped:" destination="oJK-K9-tye" eventType="touchUpInside" id="dlN-PF-z5X"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fsU-LE-LLx">
+                                <rect key="frame" x="0.0" y="56" width="414" height="666"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="eventProfCell" textLabel="Os4-ma-0x4" detailTextLabel="D0s-dl-fJa" style="IBUITableViewCellStyleValue1" id="Mcw-P6-n4F">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Mcw-P6-n4F" id="A4C-fQ-69n">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Os4-ma-0x4">
+                                                    <rect key="frame" x="20" y="15" width="25" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="D0s-dl-fJa">
+                                                    <rect key="frame" x="361" y="15" width="33" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bgw-2c-D03"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bgw-2c-D03" firstAttribute="bottom" secondItem="pGN-aO-m6h" secondAttribute="bottom" constant="89" id="Cka-Nw-y6z"/>
+                            <constraint firstItem="pGN-aO-m6h" firstAttribute="top" secondItem="fsU-LE-LLx" secondAttribute="bottom" id="IqM-TK-zTZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Iam-hL-SwA" secondAttribute="trailing" id="J6S-k3-Yxb"/>
+                            <constraint firstItem="Iam-hL-SwA" firstAttribute="top" secondItem="quw-M9-k0P" secondAttribute="top" id="ODA-l0-6l9"/>
+                            <constraint firstItem="fsU-LE-LLx" firstAttribute="leading" secondItem="bgw-2c-D03" secondAttribute="leading" id="aVx-ye-8VT"/>
+                            <constraint firstItem="fsU-LE-LLx" firstAttribute="top" secondItem="Iam-hL-SwA" secondAttribute="bottom" id="dSp-HV-X3v"/>
+                            <constraint firstItem="Iam-hL-SwA" firstAttribute="leading" secondItem="quw-M9-k0P" secondAttribute="leading" id="sIN-ey-I0k"/>
+                            <constraint firstItem="pGN-aO-m6h" firstAttribute="centerX" secondItem="quw-M9-k0P" secondAttribute="centerX" id="sxF-7M-uP8"/>
+                            <constraint firstItem="fsU-LE-LLx" firstAttribute="trailing" secondItem="bgw-2c-D03" secondAttribute="trailing" id="vqo-Eb-aT5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="fsU-LE-LLx" id="rQN-fy-fSo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A0n-hc-Uqu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1630.4347826086957" y="92.410714285714278"/>
+        </scene>
         <!--Professor View Controller-->
         <scene sceneID="kZc-mM-15g">
             <objects>
@@ -249,12 +340,22 @@
                                     <action selector="onLogoutButtonTapped:" destination="2AS-gJ-sGq" eventType="touchUpInside" id="ZGq-xi-Tcx"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FlG-LH-SXy">
+                                <rect key="frame" x="113" y="499" width="189" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Add Event "/>
+                                <connections>
+                                    <action selector="onAddEventButtonTapped:" destination="yxO-0i-bi2" eventType="touchUpInside" id="wOv-Qc-Lld"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MQz-jw-o8e"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
                         <segue destination="fFH-jq-RMN" kind="presentation" identifier="goToAddGradesViewController" id="lWq-uf-uUN"/>
+                        <segue destination="oJK-K9-tye" kind="presentation" identifier="goToEventProfView" id="6y2-vw-AZp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KJV-5z-Naz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
