@@ -14,12 +14,20 @@ class parentViewController: UIViewController {
     
     private var goToGrades = "goToGradesViewController"
     private var goToEvents = "goToEventsViewController"
-
+    
+    @IBOutlet weak var studentEmailLabel: UILabel!
+    var studentId: String?
     var userName: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        studentNameLabel.text = userName
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == goToGrades {
+            let destination = segue.destination as! gradesViewController
+            destination.studentId = studentId
+        }
     }
  
     @IBAction func onGradesButtonTapped(_ sender: UIButton) {
