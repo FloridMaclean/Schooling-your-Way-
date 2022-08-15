@@ -49,6 +49,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Add student"/>
+                                <connections>
+                                    <action selector="onAddStudentButtontapped:" destination="fFH-jq-RMN" eventType="touchUpInside" id="4gS-Aa-qyM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LhM-j0-BQO"/>

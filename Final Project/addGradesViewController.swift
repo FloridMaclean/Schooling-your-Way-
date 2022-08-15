@@ -31,6 +31,8 @@ class addGradesViewController: UIViewController {
             if err != nil {
                 print("Error getting documents: (err)")
             } else {
+                self.allData = []
+                self.students = []
                 for document in querySnapshot!.documents {
                     let name = document.documentID
                     
@@ -47,6 +49,65 @@ class addGradesViewController: UIViewController {
         dismiss(animated: true)
     }
     
+    @IBAction func onAddStudentButtontapped(_ sender: UIButton) {
+        
+        let alertController = UIAlertController(title: "Add Grades", message: "Enter Grades Data", preferredStyle: .alert)
+        
+        alertController.addTextField { textField in
+            textField.placeholder = "Enter Student Name"
+        }
+        alertController.addTextField { textField in
+            textField.placeholder = "Enter Student ID"
+        }
+        alertController.addTextField { textField in
+            textField.placeholder = "Enter Student Address"
+        }
+        alertController.addTextField { textField in
+            textField.placeholder = "Enter Student email"
+        }
+    
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+            
+            if let nameTextField = alertController.textFields?[0] as? UITextField, let studentIDTextField = alertController.textFields?[1] as? UITextField,let studentAddressTextField = alertController.textFields?[2] as? UITextField,let studentEmailTextField = alertController.textFields?[3] as? UITextField
+            {
+                
+                let name = nameTextField.text
+                let studentID = studentIDTextField.text
+                let studentAddress = studentAddressTextField.text
+                let studentEmail = studentEmailTextField.text
+                let newStudentData = [
+                    "name": name!,
+                    "studentId": studentID!,
+                    "Address": studentAddress!,
+                    "Tests":[]
+                ] as [String : Any]
+                
+//                self.tests.append(newTestData as [String : Any])
+//
+//                self.db.collection("student").document(self.studentName!).updateData([
+//                    "Tests": self.tests
+//                ]){ err in
+//                    if let err = err {
+//                        print("Error updating document: \(err)")
+//                    } else {
+//                        print("Document successfully updated")
+//                        self.loadData()
+//                    }
+//                }
+                
+                self.db.collection("student").document(studentEmail!).setData(newStudentData) { err in
+                        if let err = err {
+                            print("Error writing document: \(err)")
+                        } else {
+                            print("Document successfully written!")
+                            self.loadData()
+                        }
+                    }
+            }
+        }))
+        self.present(alertController, animated: true)
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             if segue.identifier == goToGradeAddView {
                 let destination = segue.destination as! gradeAddProfessorViewController
