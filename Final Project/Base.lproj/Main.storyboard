@@ -91,7 +91,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                                 <items>
                                     <navigationItem title="Grades" id="3rN-Tm-nHa">
-                                        <barButtonItem key="leftBarButtonItem" style="plain" id="E7G-rI-Ttd">
+                                        <barButtonItem key="leftBarButtonItem" id="E7G-rI-Ttd">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="aHD-77-xgI">
                                                 <rect key="frame" x="20" y="11" width="92" height="34.5"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -108,7 +108,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Wd-my-t3Z">
                                 <rect key="frame" x="106" y="718" width="202" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="202" id="6pI-T4-QMf"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="202" id="6pI-T4-QMf"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Add Grades"/>
@@ -181,7 +181,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                                 <items>
                                     <navigationItem title="Title" id="k9B-b2-Zqu">
-                                        <barButtonItem key="leftBarButtonItem" title="Item" style="plain" id="F8K-rz-HoX">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" id="F8K-rz-HoX">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="1EJ-19-FWm">
                                                 <rect key="frame" x="20" y="11" width="92" height="34.5"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -199,7 +199,7 @@
                                 <rect key="frame" x="106.5" y="722" width="201" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="GVT-nk-3dc"/>
-                                    <constraint firstAttribute="width" constant="201" id="m6c-FK-bCG"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="201" id="m6c-FK-bCG"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Add Event"/>
