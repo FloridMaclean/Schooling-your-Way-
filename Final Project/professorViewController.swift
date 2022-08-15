@@ -15,6 +15,7 @@ class professorViewController: UIViewController {
     private var goToAddEvent = "goToEventProfView"
     override func viewDidLoad() {
         super.viewDidLoad()
+        Analytics.setUserID("Professor")
     }
 
     @IBAction func onAddGradesButtonTapped(_ sender: UIButton) {
