@@ -535,8 +535,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1065306" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9a-7B-Jy9">
-                                <rect key="frame" x="145" y="304" width="69.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9a-7B-Jy9">
+                                <rect key="frame" x="145" y="304" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -547,8 +547,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="f_maclean@fanshaweonline.ca" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Nxi-qo-qTa">
-                                <rect key="frame" x="145" y="333" width="210.5" height="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Nxi-qo-qTa">
+                                <rect key="frame" x="145" y="312" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -559,8 +559,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1001 Fanshawe College" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="yJm-nC-0Eh">
-                                <rect key="frame" x="145" y="362" width="159.5" height="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="yJm-nC-0Eh">
+                                <rect key="frame" x="145" y="323" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -620,7 +620,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="studentEmailLabel" destination="Nxi-qo-qTa" id="5I8-at-zdX"/>
+                        <outlet property="studentAddressLael" destination="yJm-nC-0Eh" id="vaw-pq-v43"/>
+                        <outlet property="studentEmailLabel" destination="Nxi-qo-qTa" id="yPA-6V-cWa"/>
+                        <outlet property="studentIdLabel" destination="y9a-7B-Jy9" id="lwt-ad-Nr4"/>
                         <outlet property="studentNameLabel" destination="JCR-Gc-jbB" id="SV6-SH-cqa"/>
                         <segue destination="fez-GU-us5" kind="presentation" identifier="goToGradesViewController" id="W22-GB-Ehs"/>
                         <segue destination="G8x-Wl-5H4" kind="presentation" identifier="goToEventsViewController" id="X3m-zZ-dq6"/>

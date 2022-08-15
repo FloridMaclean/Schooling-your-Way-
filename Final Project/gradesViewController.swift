@@ -28,20 +28,20 @@ class gradesViewController: UIViewController {
         let docRef = db.collection("student").document(studentId ?? "stud1")
 
         docRef.getDocument { [self] (document, error) in
-                    if let document = document, document.exists {
-                        let tests = document.data()!["Tests"]! as AnyObject as! [Dictionary<String, Any>]
-                        
-                        for test in tests {
-                            let courseTest = "\(test["course"]!) - \(test["type"]!)"
-                            let grades = "\(test["obtained"]!)/\(test["grades"]!)"
-                            studGrades.append(studGrade(courseTest: courseTest, grades: grades))
-                        }
-                        print(studGrades)
-                        tableView.reloadData()
-                    } else {
-                        print("Document does not exist")
-                    }
+            if let document = document, document.exists {
+                let tests = document.data()!["Tests"]! as AnyObject as! [Dictionary<String, Any>]
+                
+                for test in tests {
+                    let courseTest = "\(test["course"]!) - \(test["type"]!)"
+                    let grades = "\(test["obtained"]!)/\(test["grades"]!)"
+                    studGrades.append(studGrade(courseTest: courseTest, grades: grades))
                 }
+                print(studGrades)
+                tableView.reloadData()
+            } else {
+                print("Document does not exist")
+            }
+        }
     }
     
     

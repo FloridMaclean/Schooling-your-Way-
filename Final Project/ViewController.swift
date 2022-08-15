@@ -81,6 +81,7 @@ class ViewController: UIViewController {
         }
         self!.emailText.text = ""
         self!.passwordText.text = ""
+        self!.loginButton.isEnabled = false
     }
     }
     
@@ -101,7 +102,7 @@ class ViewController: UIViewController {
         
         if segue.identifier == parentView {
             let destination = segue.destination as! parentViewController
-            destination.studentId = emailText.text ?? "stud1"
+            destination.studentEmail = emailText.text ?? "stud1"
         }
     }
 }
