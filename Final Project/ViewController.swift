@@ -101,7 +101,7 @@ class ViewController: UIViewController {
         
         if segue.identifier == parentView {
             let destination = segue.destination as! parentViewController
-            destination.studentId = emailText.text ?? "stud1"
+            destination.studentEmail = emailText.text ?? "stud1"
         }
     }
 }
