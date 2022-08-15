@@ -81,6 +81,7 @@ class ViewController: UIViewController {
         }
         self!.emailText.text = ""
         self!.passwordText.text = ""
+        self!.loginButton.isEnabled = false
     }
     }
     
