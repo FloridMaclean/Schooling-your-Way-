@@ -18,6 +18,8 @@
 		F23C6A7E28A8FDD1001614EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F23C6A7D28A8FDD1001614EB /* GoogleService-Info.plist */; };
 		F23C6A8028A9088D001614EB /* professorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23C6A7F28A9088D001614EB /* professorViewController.swift */; };
 		F28B914828A99EA30039B165 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F28B914728A99EA30039B165 /* FirebaseFirestore */; };
+		F28B914C28A9DC980039B165 /* gradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B914B28A9DC980039B165 /* gradesViewController.swift */; };
+		F28B914E28A9DFAE0039B165 /* eventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B914D28A9DFAE0039B165 /* eventsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		F23C6A7828A8F357001614EB /* parentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parentViewController.swift; sourceTree = "<group>"; };
 		F23C6A7D28A8FDD1001614EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F23C6A7F28A9088D001614EB /* professorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = professorViewController.swift; sourceTree = "<group>"; };
+		F28B914B28A9DC980039B165 /* gradesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gradesViewController.swift; sourceTree = "<group>"; };
+		F28B914D28A9DFAE0039B165 /* eventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				F23C6A6828A8E902001614EB /* ViewController.swift */,
 				F23C6A7828A8F357001614EB /* parentViewController.swift */,
 				F23C6A7F28A9088D001614EB /* professorViewController.swift */,
+				F28B914B28A9DC980039B165 /* gradesViewController.swift */,
+				F28B914D28A9DFAE0039B165 /* eventsViewController.swift */,
 				F23C6A6A28A8E902001614EB /* Main.storyboard */,
 				F23C6A6D28A8E904001614EB /* Assets.xcassets */,
 				F23C6A6F28A8E904001614EB /* LaunchScreen.storyboard */,
@@ -169,6 +175,8 @@
 			files = (
 				F23C6A6928A8E902001614EB /* ViewController.swift in Sources */,
 				F23C6A6528A8E902001614EB /* AppDelegate.swift in Sources */,
+				F28B914C28A9DC980039B165 /* gradesViewController.swift in Sources */,
+				F28B914E28A9DFAE0039B165 /* eventsViewController.swift in Sources */,
 				F23C6A7928A8F357001614EB /* parentViewController.swift in Sources */,
 				F23C6A8028A9088D001614EB /* professorViewController.swift in Sources */,
 				F23C6A6728A8E902001614EB /* SceneDelegate.swift in Sources */,
