@@ -16,24 +16,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Professor View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="144-Cg-x11">
-                                <rect key="frame" x="150" y="410.5" width="114" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3G-IU-0zA">
+                                <rect key="frame" x="113" y="366" width="189" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Add Grades"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MQz-jw-o8e"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="144-Cg-x11" firstAttribute="centerX" secondItem="3nn-eQ-OFQ" secondAttribute="centerX" id="VL2-2s-oY7"/>
-                            <constraint firstItem="144-Cg-x11" firstAttribute="centerY" secondItem="3nn-eQ-OFQ" secondAttribute="centerY" id="d7b-9r-9dB"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KJV-5z-Naz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-633" y="65"/>
+            <point key="canvasLocation" x="-633.33333333333337" y="64.955357142857139"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
