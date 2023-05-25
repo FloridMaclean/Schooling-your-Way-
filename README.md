@@ -11,11 +11,11 @@
 
 • Application designed low Fidelity Principles with Figma as one of the UI Design Tools with usability Principles, developed Project Artifacts.
 
-<h2>UI of the app</h2>
+## UI of the app
 
 ![schooling_your_way](https://github.com/FloridMaclean/Schooling-your-Way-/assets/70654351/45733443-06f4-416c-94cb-74a6a1934734)
 
-<h2>Slide Deck</h2>
+## Slide Deck
 
 ![Slide Deck_00002](https://github.com/FloridMaclean/Schooling-your-Way-/assets/70654351/b3681047-238b-4cb2-b454-cf9654aa36d9)
 
