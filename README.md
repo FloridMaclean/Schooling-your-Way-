@@ -14,7 +14,7 @@
 
 
 <h2>UI of the app:</h2>
-![schooling_your_way1](https://github.com/FloridMaclean/Schooling-your-Way-/assets/70654351/81f83dc7-dcb3-4169-9f03-4948243c401d)
+![schooling_your_way](https://github.com/FloridMaclean/Schooling-your-Way-/assets/70654351/81bc5856-5989-4f7e-9346-83f095332c78)
 
 
 <h2>Description</h2>
