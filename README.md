@@ -24,3 +24,5 @@
 ![Slide Deck_00004](https://github.com/FloridMaclean/Schooling-your-Way-/assets/70654351/6efec516-57c8-47fd-ba47-3ab4817a28db)
 
 ![Slide Deck_00005](https://github.com/FloridMaclean/Schooling-your-Way-/assets/70654351/cb0924f4-b79c-49ec-b0fa-91855f5456ae)
+
+![Slide Deck_00006](https://github.com/FloridMaclean/Schooling-your-Way-/assets/70654351/69b5a5e6-85a2-43e0-bd35-cee7369ec8bf)
